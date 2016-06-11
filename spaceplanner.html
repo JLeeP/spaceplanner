@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+#canvas {
+    .right{
+        position: absolute;
+        right: 0px;
+        border: 2px solid #73AD21;
+    }
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+</style>
+</head>
+
+<body>
+<!--////////////DIS START DI MENU PART-->
+<div class="dropdown">
+	<button class="dropbtn">Catalog</button>
+    <div class="dropdown-content">
+		<a href="#">Furniture</a>  
+		<a href="#">Structural</a>  
+		<a href="#">Fixtures</a>   
+		<a href="#">Landscape</a>  
+    </div>
+</div>
+<!--//////////////DROPDOWN MENU DONE////////////////-->
+
+<section>
+<div>
+<canvas id="canvas" width="850" height="500">
+This text is dispayed if your browser does not support HTML5 canvas.
+</canvas>
+</div>
+
+<script type="text/javascript">
+
+var canvas;
+var ctx;
+var x = 75;
+var y = 50;
+var WIDTH = 850;
+var HEIGHT = 500;
+var dragok = false;
+
+function rect(x,y,w,h) {
+    ctx.beginPath();
+    ctx.rect(x,y,w,h);
+    ctx.closePath();
+    ctx.fill();
+}
+
+function clear() {
+    ctx.clearRect(0,0,WIDTH,HEIGHT);
+}
+
+function init() {
+ canvas = document.getElementById("canvas");
+ ctx = canvas.getContext("2d");
+ return setInterval(draw, 10);
+}
+
+function draw() {
+ clear();
+ ctx.fillStyle = "#FAF7F8";
+ rect(0,0,WIDTH,HEIGHT);
+ ctx.fillStyle = "#444444";
+ rect(x - 15, y - 15, 30, 30);
+}
+
+function myMove(e){
+ if (dragok){
+  x = e.pageX - canvas.offsetLeft;
+  y = e.pageY - canvas.offsetTop;
+ }
+}
+
+function myDown(e){
+ if (e.pageX < x + 15 + canvas.offsetLeft && e.pageX > x - 15 +
+ canvas.offsetLeft && e.pageY < y + 15 + canvas.offsetTop &&
+ e.pageY > y -15 + canvas.offsetTop){
+  x = e.pageX - canvas.offsetLeft;
+  y = e.pageY - canvas.offsetTop;
+  dragok = true;
+  canvas.onmousemove = myMove;
+ }
+}
+
+function myUp(){
+ dragok = false;
+ canvas.onmousemove = null;
+}
+
+init();
+canvas.onmousedown = myDown;
+canvas.onmouseup = myUp;
+
+</script>
+
+</section>
+<!--//////////////////////DAH SECTION YAH DONE FI DI CYANVAS YAH NOW//////-->
+</body>
+</html>
