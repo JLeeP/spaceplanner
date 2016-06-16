@@ -1,7 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-	<body style="background-color:#EBC79E">
-		<h3>Catalog</h3>
+<head>
+<style>
+	.dropbtn {
+	    background-color: #4CAF50;
+	    color: white;
+	    padding: 10px 24px;
+	    font-size: 12px;
+	    border-radius: 2px;
+	    cursor: pointer;
+	}
+
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+	    background-color: #3e8e41;
+	}
+</style>	
+</head>
+	<body style="background-color:#F3E5AB">
+		<div class="dropdown">
+		  <button class="dropbtn">Furniture</button>
+		  	<div class="dropdown-content">
+			    <a>bedroom</a>
+			    <a>living</a>
+			    <a>bathroom</a>
+			    <a>dining</a>
+			    <a>kitchen</a>
+			    <a>office</a>
+			 </div>
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Strutural</button>
+			  <div class="dropdown-content">
+			    <a>doors</a>
+			    <a>windows</a>
+			    <a>stairs</a>
+			  </div>
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Misc</button>
+			  <div class="dropdown-content">
+			    <a>plants</a>
+			    <a>vehicles</a>
+			    <a>lanscape</a>
+			  </div>
+		</div>
 	</body>
 </html>

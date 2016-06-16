@@ -11,17 +11,42 @@
 	        border: 2px solid #73AD21;
 		}
 	}
+	.button {
+			background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    padding: 10px 20px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 12px;
+		    cursor: pointer;
+		    float: center;
+		}
+
+	.button:hover {
+    		background-color: #3e8e41;
+		}
 </style>
 </head>
 
 <body>
 	<section>
+		<div id="toolbar">
+				<button class="toolbar">Login</button>
+				<button class="toolbar">Help</button>
+				<button class="button">New</button>
+				<button class="button">Save</button>
+				<button class="button">Undo</button>
+				<button class="button">Mouse</button>
+				<button class="button">Fill</button>
+				<p style="clear:both">
+			</div>
 		<div>
 		<canvas id="canvas" width="850" height="500">
 		This text is dispayed if your browser does not support HTML5 canvas.
 		</canvas>
 		</div>
-
 		<script type="text/javascript">
 
 		var canvas;
