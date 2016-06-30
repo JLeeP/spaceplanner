@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+body {
+	background:#463E3F;
+	margin: auto;
+	font-family:georgia, times,serif;
+	height:700px;
+	}
+
+h1 {
+	text-align: center;
+	color:white;
+	font-size: 30px;
+	padding-top: 110px;
+	padding-bottom: 50px;
+	}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-size: 60px;
+	word-spacing: 10px;
+	}
+
+h2.nd {
+	padding-top: 110px;
+	padding-left: 315px;
+	text-align:center;
+	color:white;
+	font-size: 30px;
+	}
+p.nd {
+	text-align: center;
+	color: white;
+	font-style:oblique;
+	padding-top: 15px;
+	padding-left:315px;
+	}
+
+p.th {
+	text-align: center;
+	color: white;
+	}
+
+img {
+	position: center center;
+	border-radius: 50%;
+	}
+
+#header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:#667C26; 
+	height:70px; 
+	width:100%;
+	}
+
+#nav {
+	margin-left:50px;
+	margin-top:45px;
+	word-spacing:10px;
+	text-align: center;
+}
+	
+.button {
+	background-color:#4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+#page1 {
+	height:700px;
+	width:auto;
+	padding-top:50px;
+	background:url(1stpage.jpg);
+	background-repeat: no-repeat;
+	background-position: center fixed;
+	background-size: cover;
+
+	}
+	
+#page2 {
+	height:700px;
+	width:auto;
+	padding-top: 50px;
+	background: url(about.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	}
+	
+#page3 {
+	height:700px;
+	width:auto;
+	background:#666362;
+	padding-top:5px;
+	}
+	
+#page4 {
+	height:700px;
+	width:auto;
+	background:#FFA500;
+	padding-top:5px;
+	}
+}
+.page-padding {height:90px; width:50px;}
+
+a { color:white; text-decoration:none;}
+	
+a:hover { text-decoration:underline;}
+
+</body>
+</html>
