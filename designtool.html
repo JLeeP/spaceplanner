@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="designtool.css">
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!--<script>
+		var img = document.getElementById('aImg');
+		var canvas = document.getElementById("canvas");
+		img.onclick = function(){
+			aImg.src = this.src;
+			canvas
+		}
+	</script>-->
+
+	<script>
+	function alertFunction() {
+		alert("Click on image in catalog and\ndrag it around on canvas for ideal placement!");
+	}
+
+	function printFunction() {
+		window.print();
+	}
+	</script>
+	<div id="header">
+		<h1>SpacePlanner&reg</h1>
+	</div>
+
+	<div>
+		<button onclick="alertFunction()"><i class="fa fa-info-circle"> help</i></button>
+        <button style="font-size:14px"><i class="fa fa-paint-brush"> fill</i></button>
+        <button style="font-size:14px"><i class="fa fa-remove"> remove</i></button>
+        <button onclick="printFunction()"><i class="fa fa-print"> print</i></button>
+		<canvas id="canvas" width="859" height="500">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+	</div>
+	<div id="aside">
+		<h4>furniture</h4>
+		<img id="aImg" src="bed1.png" width="62" height="84p">
+		<img src="bed2.png" width="39" height="82">
+		<img src="bed3.png" width="139" height="92">
+		<h4>stucture</h4>
+		<img src="bed1.png" width="62" height="84p">
+		<img src="bed2.png" width="39" height="82">
+		<img src="bed3.png" width="139" height="92">
+		<h4>misc</h4>
+		<img src="bed1.png" width="62" height="84p">
+		<img src="bed2.png" width="39" height="82">
+		<img src="bed3.png" width="139" height="92">
+	</div>
+	
+
+</body>
+</html>

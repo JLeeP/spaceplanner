@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+#header {
+	background-color: black;
+	text-align: center;
+	color:white;
+	height:10px;
+	width:auto;
+	padding:10px;
+	}
+
+h4 {
+	color:navy;
+	text-align: center;
+	}
+
+img {
+	padding-left: 10px;
+	}
+
+#aside {
+	float: left;
+	background-color: #F5F5DC;
+	width:300px;
+	height:500px;
+	}
+
+#canvas {
+	float: right;
+	right: 0px;
+	border: 1px solid #666362;
+	background-color: #D1D0CE;
+	}
+	
+</body>
+</html>
